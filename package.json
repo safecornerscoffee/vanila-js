@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-js",
+  "version": "1.0.0",
+  "description": "frameworkless movement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safecornerscoffee/vanilla-js.git"
+  },
+  "keywords": [
+    "vanilla-js"
+  ],
+  "author": "safecorners",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safecornerscoffee/vanilla-js/issues"
+  },
+  "homepage": "https://github.com/safecornerscoffee/vanilla-js#readme"
+}
