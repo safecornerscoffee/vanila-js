@@ -1,3 +1,5 @@
+import './styles.css'
+
 let count = 0
 
 const getCount = () => {
