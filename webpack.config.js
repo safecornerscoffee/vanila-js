@@ -1,8 +1,8 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const port = 3000
+const MultipleHtmlWebpackPlugin = require('./multiple-html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -32,14 +32,11 @@ module.exports = {
   },
   devtool: 'eval',
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'tailwind.css',
     }),
-  ],
+  ].concat(MultipleHtmlWebpackPlugin('src')),
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     watchContentBase: true,
